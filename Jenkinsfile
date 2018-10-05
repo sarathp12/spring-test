@@ -4,11 +4,6 @@ pipeline {
       label 'centos7-slave'
       }
 
-    tools  {
-      maven 'maven'
-      jdk 'jdk'
-      }
-
     stages {
          
          stage ('Checkout external proj') {

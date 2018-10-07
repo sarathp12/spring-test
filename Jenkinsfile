@@ -10,15 +10,6 @@ pipeline {
      }
     stages {
          
-         stage ('Checkout external proj') {
-          
-           steps {
-               git branch: 'development',
-                credentialsId: 'sarathp',
-                url: 'https://github.com/sarathp12/spring-test.git'
-             }
-        }
-        
          stage ('compile') {
            steps {
              sh 'mvn compile'

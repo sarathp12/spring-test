@@ -3,7 +3,11 @@ pipeline {
     agent {
       label 'centos7-slave'
       }
-  
+
+    tools {
+      JDK 'jdk 1.8.0'
+      maven 'apache-maven'
+     }
     stages {
          
          stage ('Checkout external proj') {

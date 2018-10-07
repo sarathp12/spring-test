@@ -13,7 +13,7 @@ pipeline {
          stage ('Checkout external proj') {
           
            steps {
-               git branch: 'master',
+               git branch: 'development',
                 credentialsId: 'sarathp',
                 url: 'https://github.com/sarathp12/spring-test.git'
              }

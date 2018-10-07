@@ -27,7 +27,7 @@ pipeline {
 
          stage ('Static Analysis') {
            steps {
-             sh 'mvn sonar:sonar -Dsonar.host.url=http://$(boot2docker ip):9000 -Dsonar.jdbc.url=jdbc:postgresql://$(boot2docker ip)/sonar'
+             sh 'mvn sonar:sonar -Dsonar.host.url=http://192.168.199.133:9000 -Dsonar.jdbc.url=jdbc:postgresql://192.168.199.133/sonar'
             } 
         }
 

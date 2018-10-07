@@ -18,6 +18,18 @@ pipeline {
                 url: 'https://github.com/sarathp12/spring-test.git'
              }
         }
+        
+         stage ('compile') {
+           steps {
+             sh 'mvn compile'
+             }
+        }
+
+         stage ('Static Analysis') {
+           steps {
+             sh 'mvn sonar:sonar'
+            } 
+        }
 
          stage ('build') { 
            steps {

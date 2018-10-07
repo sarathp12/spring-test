@@ -3,6 +3,11 @@ pipeline {
     agent {
       label 'centos7-slave'
       }
+    
+    tools {
+      Maven 'maven'
+      JDK 'jdk'
+     }
 
     stages {
          

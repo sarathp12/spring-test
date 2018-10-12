@@ -1,7 +1,7 @@
 pipeline {
     
     agent {
-      label 'centos7-slave'
+      label 'docker-slave'
       }
 
     tools {
